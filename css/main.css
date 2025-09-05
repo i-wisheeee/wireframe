@@ -14,55 +14,61 @@ a {
     text-decoration: none;
     color: inherit;
 }
+
 body {
     line-height: 1;
     background-color: bisque;
 }
+
 #wrap {
     max-width: 500px;
-    
+
     margin: 0 auto;
     background-color: #005BAC;
 
 }
+
 .header {
-  width: 100%;
-  max-width: 500px;
+    width: 100%;
+    max-width: 500px;
     height: 58px;
-     margin-bottom: 29px;
+    margin-bottom: 29px;
 }
+
 .header .inner {
-/* 
+    /* 
     width: calc(100% - 40px); */
-   padding: 20px;
+    padding: 20px;
     height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
- 
-   margin: 0 auto;
-  
-   
-   
+
+    margin: 0 auto;
+
+
+
 }
 
 .header .inner .logo {
-width: 103px;
-height: 25px;
+    width: 103px;
+    height: 25px;
 
 
 }
+
 .header .inner .logo a {
     display: block;
     width: 100%;
     height: 100%;
-   
+
 }
+
 .header .inner .logo a img {
-width: 100%;
-height: 100%;
-object-fit: cover;
- margin-right: 102px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-right: 102px;
 }
 
 .header .inner .menu {
@@ -71,32 +77,39 @@ object-fit: cover;
     line-height: 58px;
     text-align: center;
 }
+
 .header .inner .menu li {
     width: 27px;
     height: 27px;
 }
+
 .header .inner .menu li:nth-child(3) {
     width: 30px;
     height: 30px;
 }
+
 .header .inner .menu li:nth-child(3) a {
     width: 100%px;
     height: 100%px;
     object-fit: cover;
 }
+
 .header .inner .menu li:nth-child(3) a img {
     width: 100%px;
     height: 100%px;
     object-fit: cover;
 }
+
 .header .inner .menu li:nth-child(2) a {
     margin-right: 23px;
 }
-    .header .inner .menu li a {
-        display: block;
-        width: 100%;
-        height: 100%;
+
+.header .inner .menu li a {
+    display: block;
+    width: 100%;
+    height: 100%;
 }
+
 .header .inner .menu li a img {
     width: 100%;
     height: 100%;
@@ -105,16 +118,15 @@ object-fit: cover;
 
 /* 메인시작 */
 /* 메인1 */
-.main {
-  
+.main {}
 
-}
 .main .section-01 {
     width: 299px;
     height: 69px;
     margin: 0 auto;
-    
+
 }
+
 .main .section-01 .gnb {
     width: 100%;
     height: 40px;
@@ -123,8 +135,9 @@ object-fit: cover;
     text-align: center;
     line-height: 100%;
     align-items: center;
-    
+
 }
+
 .main .section-01 .gnb li:nth-child(1) {
     width: 54px;
     height: 40px;
@@ -134,49 +147,363 @@ object-fit: cover;
     line-height: 40px;
     background-color: #fff;
     color: #005BAC;
-    
+
 }
+
 .main .section-01 .gnb li {
     font-weight: bold;
     color: #fff;
-    
+
 }
+
 .main .section-01 .gnb li a {
-font-size: 24px;
+    font-size: 24px;
 
 
 }
 
 /* 메인2시작 */
 .section-02 {
-  width: 100%;
-  position: relative;
-  margin: 0 auto;
-}
-.section-02 img {
     width: 100%;
-    height: auto;
-    object-fit: cover;
+
+    margin: 0 auto;
+    background-color: #fff;
+    height: 580px;
+    background: url('/img/이미지/메인자연.jpg') center center/ cover no-repeat;
     display: block;
     border-radius: 40px 0 0 0;
-    
+  
+padding-top: 24px;
 }
+
 .section-02 .find {
     width: 335px;
     height: 53px;
     border: 2px solid #005BAC;
     border-radius: 10px;
-   
-    position: absolute;
-    top: 0;
-    left: 0;
-    text-align: center;
-    transform: translate(5%, 30%);    
+    margin: 0 auto;
+    margin-bottom: 25px;
+
 }
+
 .section-02 .find a {
     font-size: 24px;
     text-align: center;
     line-height: 48px;
     align-items: center;
     color: #9F9F9F;
+    display: block;
 }
+
+.section-02 .inner {
+    background-color: #fff;
+    height: 453px;
+    border: 1px solid #fff;
+    border-radius: 40px 0 0 0;
+    margin: 0 auto;
+    width: calc(100% - 40px);
+      padding: 26px 25px 29px; 
+}
+
+
+.section-02 .inner .list-01 {
+    width: 100%;
+    margin-bottom: 20px;
+    
+    border-bottom: 1px solid #C0C0C0;
+  
+    
+
+
+}
+
+.section-02 .inner .list-01 .item {
+    display: flex;
+    align-items: center;
+  justify-content: center;
+    padding-bottom: 18px;
+    gap: 28px;
+   
+}
+
+.section-02 .inner .list-01 .item li {
+   
+     text-align: center;
+     display: block;
+     /* 가상요소 선택자로 가운데 바 넣어주기1 */
+     /* margin-right: 14px; */
+    /*  padding-right: 14px;
+     border-right: 1px solid #C0C0C0; */
+     position: relative;
+
+}
+
+/* 가상요소선택자로 가운데 바 넣어주기 */
+.section-02 .inner .list-01 .item li::before {
+    content: '';
+    width: 1px;
+    height: 16px;
+    background-color: #afafaf;
+    position: absolute;
+    top: 50%;
+    left: -14px;
+    transform: translateY(-50%);
+    
+}
+.section-02 .inner .list-01 .item li:first-child:before {
+display: none;
+}
+.section-02 .inner .list-01 .item li a {
+     font-size: 16px;
+     
+     
+    
+     font-weight: bold;
+     color: #8E8E8E;
+    
+}
+.section-02 .inner .list-01 .item li:first-child a {
+    color: #005BAC;
+    
+}
+.section-02 .inner .list-01 .item li:last-child a {
+    border-right: none;
+}
+
+
+.section-02 .inner .list-02 {
+    width: 100%;
+    margin: 0 auto;
+     
+}
+.section-02 .inner .list-02 .item {
+    display: flex;
+    justify-content: center;
+    
+    gap: 13px;
+    line-height: 14px;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.section-02 .inner .list-02 .item li:last-child {
+  display: flex;
+}
+.section-02 .inner .list-02 .item li a {
+font-size: 14px;
+  display: flex;
+    align-items: center;
+}
+.section-02 .inner .list-02 .item li a img {
+width: 14px;
+height: 14px;
+margin-right: 5px;
+}
+
+.section-02 .inner .list-03 {
+    width: 218px;
+    height: 29px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+     
+}
+.section-02 .inner .list-03 .item {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+   
+    gap: 52px;
+}
+.section-02 .inner .list-03 .item li {
+    font-size: 24px;
+}
+.section-02 .inner .list-03 .item li a {}
+.section-02 .inner .list-03 .item li a img {
+    width: 24px;
+    height: 24px;
+    object-fit: cover;
+  
+}
+
+.section-02 .inner .list-04 {
+   width: 200px;
+    margin: 0 auto; 
+}
+.section-02 .inner .list-04 .item {
+     display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+     
+}
+.section-02 .inner .list-04 .item li {
+    font-size: 14px;
+}
+.section-02 .inner .list-04 .item li a {
+    color: #8E8E8E;
+}
+.section-02 .inner .list-04 .item li img {
+    width: 16px;
+    height: 16px;
+    object-fit: cover;
+}
+
+.section-02 .inner .list-05 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-bottom: 1px dotted #C0C0C0;
+    padding-bottom: 15px;
+}
+.section-02 .inner .list-05 a {
+    font-size: 12px;
+}
+.section-02 .inner .list-05 a img {
+    width: 12px;
+    height: 12px;
+    object-fit: cover;
+    margin-right: 5px;
+}
+
+
+/* 메인3 시작 */
+.section-03 {
+    
+width: 100%;
+height: 370px;
+background-color: #00B2E3;
+margin-top: 30px;
+}
+.section-03 .service {
+width: calc(100% - 40px);
+margin: 0 auto;
+}
+.section-03 .service h2 {
+    color: #fff;
+    font-size: 16px;
+    padding: 20px 0 25px 0;
+}
+.section-03 .service .inner {
+  
+}
+.section-03 .service .inner ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+     
+}
+.section-03 .service .inner ul li {
+        width: 42.93%;
+height: 11.73%;
+background-color: #fff;
+opacity: 70%;
+border: 1px solid inherit;
+border-radius: 10px;
+line-height: 44px;
+display: flex;
+align-items: center;
+text-align: center;
+font-size: 14px;
+text-align: center;
+padding: 0 14px;
+
+}
+
+.section-03 .service .inner ul li:first-child {
+color: #005BAC;
+border: 1px solid #005BAC;
+}
+.section-03 .service .inner ul li img {
+width: 24px;
+height: 24px;
+object-fit: cover;
+margin-right: 10px;
+}
+
+/* 메인4시작 */
+.section-04 {
+ width: 100%;
+}
+.section-04 .title {
+  
+}
+.section-04 .title .image {
+         width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.section-04 .title .image img {
+    width: 335px;
+    height: 502px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin: 30px 0;
+}
+.section-04 .title .image .text_wrap {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 143px;
+    height: 314px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transform: translateY(30%);
+}
+.section-04 .title .image .text_wrap h3 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: right;
+    line-height: 30px;
+}
+.section-04 .title .image .text_wrap p {
+    width: 143px;
+    height: 44px;
+    font-size: 14px;
+    border: 1px solid #000;
+    background-color: #fff;
+    line-height: 44px;
+    text-align: center;
+}
+
+/* 메인5 시작 */
+.section-05 {
+  
+    height: 263px;
+    width: calc(100% - 40px);
+    margin: 0 auto;
+}
+.section-05 .text {
+    color: #fff;
+    
+}
+.section-05 .text h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.section-05 .text p {
+    font-size: 12px;
+    margin-bottom: 30px;
+
+}
+
+.section-05 .image_wrap {
+
+}
+.section-05 .image_wrap ul { 
+    display: flex;
+    justify-content: space-between;
+   
+}
+.section-05 .image_wrap ul li {
+ margin-right: 10px;
+}
+.section-05 .image_wrap ul li img {
+width: 161px;
+height: 173px;
+}
+
